@@ -1161,33 +1161,44 @@ footer {
   .skills-grid {
     grid-template-columns: 1fr;
   }
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    row-gap: 8px;
+    padding: 8px 16px;
+  }
+  .logo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .header-actions {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    display: flex;
+  }
   #nav-menu {
-    display: none; /* Controlled by mobile menu toggle in JS */
+    display: block;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    scrollbar-width: none;
+  }
+  #nav-menu::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 6px 4px;
   }
   .mobile-nav-toggle {
-    display: block;
-  }
-
-  /* Mobile menu active states override */
-  #main-header.nav-open #nav-menu {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--bg-color);
-    border-bottom: 1px solid var(--card-border);
-    padding: 20px 24px;
-    box-shadow: 0 10px 20px var(--shadow-color);
-  }
-
-  #main-header.nav-open .nav-list {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .header-actions {
-    display: flex;
+    display: none !important;
   }
   
   .timeline::before {
