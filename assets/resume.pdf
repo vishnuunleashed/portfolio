@@ -1,0 +1,59 @@
+VISHNUPRASAD T R
+Kochi, Kerala, (+91) 8086304068 | trvishnuprasad1992@gmail.com | www.linkedin.com/in/vishnuprasadtr/
+
+SUMMARY
+Flutter Developer with 4+ years of experience building scalable cross-platform mobile applications using Flutter and Dart. Experienced in Clean Architecture, MVVM, BLE integrations, Firebase, REST APIs, WebSockets, and IoT-based solutions. Proven track record of delivering production-ready applications in Agile environments, optimizing app performance, and implementing complex real-time features. Strong team player with experience handling multiple projects simultaneously and collaborating across cross-functional teams.
+
+TECHNICAL SKILLS
+- Languages: Dart, Java (Basic), C (Basic)
+- Frameworks: Flutter
+- Architecture: Clean Architecture, MVVM
+- State Management: Riverpod, BLoC, Provider, GetX, Redux
+- Integrations: Firebase, REST APIs, WebSocket/Socket.IO, Method Channels
+- IoT & Bluetooth: BLE, Bluetooth Classic, ESP32, STM32, PSoC
+- Concurrency: Streams, Futures, Isolates, WorkManager
+- Tools & Workflow: GitLab, SVN, Agile/Scrum
+- Additional: Weighing Machines, Push Notifications, Flutter Migration, Encryption, Hive.
+
+EXPERIENCE
+
+Bayasys InfoTech Pvt Ltd, Kochi, Kerala
+Software Developer | March 2023 - May 2026
+- Coordinated release on both Apple store deployment and Google Play Store deployment.
+- Led the end-to-end implementation of GitLab, successfully migrating from Subversion (SVN) to enhance version control workflows.
+- Worked in an Agile (Scrum) environment with 3-week sprints, delivering features consistently.
+- Transforming the features of web-based ERP products into our mobile applications, aligning closely with their workflow.
+- Optimized existing Firebase notification for better performance.
+- Integrated flutter application with weighing machine using BLE and Bluetooth Classic.
+- Applied Clean Architecture and MVVM to craft robust and scalable applications.
+- Worked with sockets for real-time communication features.
+
+Skyewall, Kochi, Kerala
+Software Developer | February 2022 - February 2023
+- Maintenance and development of houseboat booking applications.
+- Responsive UI and enforced a booking feature for reserving houseboats, kayaking boats, and rentals. Created a seamless user experience for both vendors and customers.
+
+Freelance, Bangalore, Bengaluru, Karnataka
+Software Developer | February 2022 - February 2023
+- Contributed to implementing features using (IoT) Internet of Things.
+- Configured real-time communication of embedded devices.
+- Integrated loT (Internet of Things) devices such as PSoC, ESP32, STM32 using Bluetooth Low Energy (BLE).
+- Developed a feature for remotely controlling devices in the Flutter app.
+
+KEY PROJECTS
+- Redawa eOrder: Customer ordering application with BLE integrations, Firebase notifications, and real-time inventory workflows.
+- Cybernet Supplier: Supplier-side ERP mobile application with order management and real-time synchronization features.
+- BMET Check: QR-code based verification application with secure scanning workflows and encrypted data handling.
+- Cybernet IT Solutions: Enterprise ERP mobile application covering Finance, Inventory, Procurement, HRMS, and CRM workflows.
+
+ACHIEVEMENTS
+- Received special recognition award for outstanding Flutter development contributions.
+- Led migration from SVN to GitLab improving version control workflows.
+- Successfully managed and delivered multiple concurrent Flutter projects.
+
+EDUCATION
+Bharathiar University, Coimbatore, India | March 2018 - December 2021
+Bachelor of Science in Computer Science
+
+PORTFOLIO
+GitHub: Project-Management-App

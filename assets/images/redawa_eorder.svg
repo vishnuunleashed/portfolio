@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141923" />
+      <stop offset="100%" stop-color="#0f111a" />
+    </linearGradient>
+    
+    <!-- Phone Screen Gradient -->
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Accent Lime Gradient -->
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a3e635" />
+      <stop offset="100%" stop-color="#65a30d" />
+    </linearGradient>
+
+    <!-- Card Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.5" />
+    </linearGradient>
+
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#a3e635" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="400" height="300" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.05">
+    <path d="M 0,30 L 400,30 M 0,60 L 400,60 M 0,90 L 400,90 M 0,120 L 400,120 M 0,150 L 400,150 M 0,180 L 400,180 M 0,210 L 400,210 M 0,240 L 400,240 M 0,270 L 400,270" stroke="#ffffff" stroke-width="1"/>
+    <path d="M 40,0 L 40,300 M 80,0 L 80,300 M 120,0 L 120,300 M 160,0 L 160,300 M 200,0 L 200,300 M 240,0 L 240,300 M 280,0 L 280,300 M 320,0 L 320,300 M 360,0 L 360,300" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Glowing background circles -->
+  <circle cx="100" cy="80" r="50" fill="#a3e635" opacity="0.05" filter="url(#glow)"/>
+  <circle cx="300" cy="220" r="60" fill="#38bdf8" opacity="0.03" filter="url(#glow)"/>
+
+  <!-- Phone Mockup Container -->
+  <g transform="translate(130, 20)">
+    <!-- Phone Body / Bezel -->
+    <rect width="140" height="260" rx="18" fill="#090d16" stroke="#475569" stroke-width="3"/>
+    <!-- Phone Screen -->
+    <rect x="5" y="5" width="130" height="250" rx="14" fill="url(#phoneGrad)"/>
+    <!-- Phone Camera Notch -->
+    <rect x="45" y="5" width="50" height="12" rx="6" fill="#090d16"/>
+    
+    <!-- Top Navigation Bar inside Phone -->
+    <text x="15" y="32" font-family="'Outfit', sans-serif" font-size="9" fill="#94a3b8" font-weight="600">Redawa eOrder</text>
+    <!-- BLE Connection status icon in app -->
+    <circle cx="115" cy="29" r="4" fill="#a3e635" filter="url(#glow)"/>
+    <path d="M113,27 L117,31 M117,27 L113,31" stroke="#090d16" stroke-width="0.75"/>
+
+    <!-- Search Bar inside App -->
+    <rect x="10" y="44" width="120" height="14" rx="4" fill="#334155" opacity="0.6"/>
+    <text x="20" y="54" font-family="sans-serif" font-size="7" fill="#64748b">Search products...</text>
+    <circle cx="118" cy="51" r="2.5" fill="none" stroke="#64748b" stroke-width="0.8"/>
+    <line x1="120" y1="53" x2="122" y2="55" stroke="#64748b" stroke-width="0.8"/>
+
+    <!-- Categories Tab -->
+    <rect x="10" y="65" width="32" height="10" rx="3" fill="url(#limeGrad)"/>
+    <text x="14" y="72" font-family="sans-serif" font-size="6" fill="#0f172a" font-weight="600">All Items</text>
+
+    <rect x="46" y="65" width="34" height="10" rx="3" fill="#334155" opacity="0.6"/>
+    <text x="50" y="72" font-family="sans-serif" font-size="6" fill="#94a3b8">Beverages</text>
+
+    <rect x="84" y="65" width="32" height="10" rx="3" fill="#334155" opacity="0.6"/>
+    <text x="88" y="72" font-family="sans-serif" font-size="6" fill="#94a3b8">Groceries</text>
+
+    <!-- Product Card 1 -->
+    <rect x="10" y="82" width="120" height="42" rx="6" fill="url(#cardGrad)" stroke="#475569" stroke-width="0.5"/>
+    <rect x="15" y="87" width="32" height="32" rx="4" fill="#475569" opacity="0.4"/>
+    <!-- Box icon inside product card -->
+    <path d="M23,93 L31,93 L31,101 L23,101 Z" fill="none" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M23,93 L27,90 L31,93" fill="none" stroke="#94a3b8" stroke-width="1"/>
+    <text x="52" y="96" font-family="sans-serif" font-size="7" fill="#f8fafc" font-weight="600">Premium Coffee</text>
+    <text x="52" y="105" font-family="sans-serif" font-size="6" fill="#94a3b8">QTY: 12 Cases</text>
+    <text x="52" y="117" font-family="sans-serif" font-size="8" fill="#a3e635" font-weight="600">$144.00</text>
+    <!-- Add Button -->
+    <circle cx="116" cy="113" r="6" fill="url(#limeGrad)"/>
+    <path d="M113,113 H119 M116,110 V116" stroke="#0f172a" stroke-width="1.2"/>
+
+    <!-- Product Card 2 -->
+    <rect x="10" y="130" width="120" height="42" rx="6" fill="url(#cardGrad)" stroke="#475569" stroke-width="0.5"/>
+    <rect x="15" y="135" width="32" height="32" rx="4" fill="#475569" opacity="0.4"/>
+    <!-- Bottle icon -->
+    <path d="M29,141 L31,141 L31,143 L29,143 Z M27,143 H33 V155 H27 Z" fill="none" stroke="#94a3b8" stroke-width="1"/>
+    <text x="52" y="144" font-family="sans-serif" font-size="7" fill="#f8fafc" font-weight="600">Organic Honey</text>
+    <text x="52" y="153" font-family="sans-serif" font-size="6" fill="#94a3b8">QTY: 5 Cases</text>
+    <text x="52" y="165" font-family="sans-serif" font-size="8" fill="#a3e635" font-weight="600">$85.00</text>
+    <circle cx="116" cy="161" r="6" fill="url(#limeGrad)"/>
+    <path d="M113,161 H119 M116,158 V164" stroke="#0f172a" stroke-width="1.2"/>
+
+    <!-- Bottom Navigation Bar inside Phone -->
+    <rect x="5" y="218" width="130" height="32" fill="#0f172a" stroke="#1e293b" stroke-width="0.5"/>
+    <circle cx="25" cy="232" r="5" fill="url(#limeGrad)"/> <!-- Home -->
+    <circle cx="58" cy="232" r="4" fill="none" stroke="#64748b" stroke-width="1"/> <!-- Search -->
+    <!-- Order Cart list Icon -->
+    <path d="M88,229 H96 M88,232 H96 M88,235 H92" stroke="#64748b" stroke-width="1" stroke-linecap="round"/>
+    <circle cx="120" cy="232" r="4" fill="none" stroke="#64748b" stroke-width="1"/> <!-- Profile -->
+  </g>
+
+  <!-- External Elements / Visual Metaphors -->
+  <!-- Weighing scale representation on the left with BLE waves -->
+  <g transform="translate(25, 110)">
+    <rect x="0" y="20" width="70" height="12" rx="2" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <rect x="10" y="8" width="50" height="12" rx="1" fill="#334155"/>
+    <line x1="15" y1="14" x2="35" y2="14" stroke="#a3e635" stroke-width="2" filter="url(#glow)"/>
+    <text x="40" y="17" font-family="monospace" font-size="6" fill="#a3e635" font-weight="bold">12.45 kg</text>
+    
+    <!-- BLE Connection Indicator -->
+    <path d="M 60,0 A 10,10 0 0,1 70,-10 M 63,4 A 6,6 0 0,1 69,-2 M 57,-4 A 14,14 0 0,1 71,-18" fill="none" stroke="#a3e635" stroke-width="1" opacity="0.6" stroke-linecap="round"/>
+    <circle cx="55" cy="7" r="1.5" fill="#a3e635"/>
+  </g>
+
+  <!-- Bluetooth Classic logo floating -->
+  <g transform="translate(60, 60)" opacity="0.8">
+    <circle cx="15" cy="15" r="15" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <path d="M12,8 L18,14 L15,17 L15,3 L18,6 L12,12 M15,17 V22 M15,3 V8" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+
+  <!-- Firebase Notification box on the right -->
+  <g transform="translate(285, 90)" filter="url(#glow)">
+    <rect width="90" height="40" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+    <path d="M8,12 L14,7 L20,12 M8,12 V28 H20 V12" fill="none" stroke="#f59e0b" stroke-width="1" stroke-linejoin="round"/>
+    <!-- Small Bell icon -->
+    <path d="M15,14 A 3,3 0 0,1 18,17 V22 H12 V17 A 3,3 0 0,1 15,14 Z" fill="#f59e0b"/>
+    <text x="28" y="18" font-family="sans-serif" font-size="7" fill="#f8fafc" font-weight="600">Firebase</text>
+    <text x="28" y="28" font-family="sans-serif" font-size="6" fill="#94a3b8">Order Dispatched</text>
+    <!-- Glowing orange circle -->
+    <circle cx="82" cy="10" r="3" fill="#ef4444"/>
+  </g>
+</svg>

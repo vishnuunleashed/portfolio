@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Vishnuprasad T R | Senior Flutter Developer Portfolio</title>
+  <meta name="title" content="Vishnuprasad T R | Senior Flutter Developer Portfolio">
+  <meta name="description" content="Portfolio of Vishnuprasad T R, a Senior Flutter Developer with 4+ years of experience in clean architecture, BLE integrations, IoT, MVVM, and real-time mobile applications.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vishnuprasad T R | Senior Flutter Developer">
+  <meta property="og:description" content="Senior Flutter Developer specializing in Clean Architecture, MVVM, BLE, IoT, and high-performance cross-platform mobile apps.">
+  <meta property="og:image" content="assets/images/redawa_eorder.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glowing Blobs -->
+  <div class="glow-blob blob-1"></div>
+  <div class="glow-blob blob-2"></div>
+
+  <!-- Header & Navigation -->
+  <header id="main-header" class="header-glass">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-accent">V</span>ishnuprasad
+      </a>
+      
+      <!-- Mobile Nav Toggle -->
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Area: Theme Toggle & Resume -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle light/dark theme">
+          <i data-lucide="sun" class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+        <a href="assets/resume.pdf" class="btn btn-primary" id="btn-resume" download="Vishnuprasad_TR_Resume.pdf">
+          <span>Resume</span>
+          <i data-lucide="download"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content scroll-reveal">
+        <span class="badge hero-badge">Senior Flutter Developer</span>
+        <h1 class="hero-title">
+          Building Next-Gen <br>
+          <span class="text-gradient">Mobile & IoT</span> Experiences
+        </h1>
+        <p class="hero-description">
+          I am <strong>Vishnuprasad T R</strong>, a Flutter Developer with 4+ years of experience designing and building scalable, cross-platform mobile applications. I specialize in <strong>Clean Architecture</strong>, <strong>BLE/IoT integrations</strong>, and robust real-time communication modules.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-secondary">
+            <span>View My Work</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
+        
+        <!-- Social Profile Quicklinks -->
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/vishnuprasadtr/" target="_blank" rel="noopener" class="social-link" title="LinkedIn Profile">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="https://github.com/trvishnuprasad1992" target="_blank" rel="noopener" class="social-link" title="GitHub Repository">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="mailto:trvishnuprasad1992@gmail.com" class="social-link" title="Email Me">
+            <i data-lucide="mail"></i>
+          </a>
+          <a href="tel:+918086304068" class="social-link" title="Call Me">
+            <i data-lucide="phone"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Visual Element - App mockup frame -->
+      <div class="hero-visual scroll-reveal">
+        <div class="visual-wrapper">
+          <div class="mockup-frame">
+            <img src="assets/images/redawa_eorder.svg" alt="Mobile App BLE Mockup Demo" id="hero-mockup-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-subtitle">My Creations</span>
+        <h2 class="section-title">Production Apps</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          A selection of enterprise ERP, ordering, and security tools I've architected and implemented using Flutter.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Redawa eOrder -->
+        <article class="project-card scroll-reveal">
+          <div class="project-image">
+            <img src="assets/images/redawa_eorder.svg" alt="Redawa eOrder Application Mockup">
+            <span class="project-category">IoT & e-Commerce</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-card-title">Redawa eOrder</h3>
+            <p class="project-card-desc">
+              Customer ordering mobile application featuring Bluetooth Low Energy (BLE) weighing machine integration, Firebase push notifications, and real-time inventory synchronization.
+            </p>
+            <div class="project-tags">
+              <span>Flutter</span>
+              <span>BLE</span>
+              <span>Firebase</span>
+              <span>Streams</span>
+            </div>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
+                <span>Play Store</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Cybernet Supplier -->
+        <article class="project-card scroll-reveal">
+          <div class="project-image">
+            <img src="assets/images/cybernet_supplier.svg" alt="Cybernet Supplier Application Mockup">
+            <span class="project-category">ERP & Supply Chain</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-card-title">Cybernet Supplier</h3>
+            <p class="project-card-desc">
+              Supplier-side ERP mobile application featuring complex order workflows, invoice status management, and offline-first database synchronization pipelines.
+            </p>
+            <div class="project-tags">
+              <span>Flutter</span>
+              <span>ERP</span>
+              <span>Sync System</span>
+              <span>Hive</span>
+            </div>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
+                <span>Play Store</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: BMET Check -->
+        <article class="project-card scroll-reveal">
+          <div class="project-image">
+            <img src="assets/images/bmet_check.svg" alt="BMET Check Application Mockup">
+            <span class="project-category">Utility & Security</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-card-title">BMET Check</h3>
+            <p class="project-card-desc">
+              QR-code based mobile verification app focusing on high-speed scanner configurations, secure cryptographic token verification, and secure offline caching layers.
+            </p>
+            <div class="project-tags">
+              <span>Flutter</span>
+              <span>QR Scanner</span>
+              <span>Encryption</span>
+              <span>Isolates</span>
+            </div>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
+                <span>Play Store</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Cybernet IT Solutions -->
+        <article class="project-card scroll-reveal">
+          <div class="project-image">
+            <img src="assets/images/cybernet_it_solutions.svg" alt="Cybernet IT Solutions Application Mockup">
+            <span class="project-category">Enterprise ERP</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-card-title">Cybernet IT Solutions</h3>
+            <p class="project-card-desc">
+              Enterprise-grade ERP system mobilization, bridging core modules like HRMS, Finance, CRM, and procurement into an interactive dashboard workspace.
+            </p>
+            <div class="project-tags">
+              <span>Flutter</span>
+              <span>Clean Architecture</span>
+              <span>REST APIs</span>
+              <span>MVVM</span>
+            </div>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
+                <span>Play Store</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Timeline Experience Section -->
+  <section id="experience" class="section-padding section-alt">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-subtitle">My Career Path</span>
+        <h2 class="section-title">Work Experience</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience 1: Bayasys -->
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date">Mar 2023 - May 2026</span>
+              <h3 class="timeline-role">Software Developer</h3>
+              <h4 class="timeline-company">Bayasys InfoTech Pvt Ltd, Kochi, Kerala</h4>
+            </div>
+            <ul class="timeline-body">
+              <li>Coordinated app deployments on Google Play Store and Apple App Store.</li>
+              <li>Led migrating version control systems from Subversion (SVN) to Git/GitLab.</li>
+              <li>Worked in Agile environments with 3-week sprints delivering robust features.</li>
+              <li>Mobilized complex web-based ERP systems into lightweight Flutter layouts.</li>
+              <li>Optimized BLE and Bluetooth Classic communication drivers for weighing scales.</li>
+              <li>Applied MVVM and Clean Architecture patterns for long-term codebase scale.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2: Skyewall -->
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date">Feb 2022 - Feb 2023</span>
+              <h3 class="timeline-role">Software Developer</h3>
+              <h4 class="timeline-company">Skyewall, Kochi, Kerala</h4>
+            </div>
+            <ul class="timeline-body">
+              <li>Developed and maintained customer houseboat and kayak rental booking engines.</li>
+              <li>Built highly responsive interfaces optimized for multiple device form factors.</li>
+              <li>Enforced booking verification workflows for vendors and customers.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 3: Freelance -->
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date">Feb 2022 - Feb 2023</span>
+              <h3 class="timeline-role">Software Developer</h3>
+              <h4 class="timeline-company">Freelance (IoT Systems), Bangalore, Karnataka</h4>
+            </div>
+            <ul class="timeline-body">
+              <li>Implemented features interfacing with embedded microcontrollers (ESP32, STM32, PSoC).</li>
+              <li>Integrated Bluetooth Low Energy communication channels for remote telemetry.</li>
+              <li>Developed low-latency dashboards for remote hardware control.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Grid -->
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-subtitle">Proficiencies</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Languages & Frameworks -->
+        <div class="skills-card scroll-reveal">
+          <div class="skills-card-header">
+            <i data-lucide="code-2" class="skills-icon"></i>
+            <h3>Languages & Frameworks</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">Dart</span>
+            <span class="skill-badge">Flutter</span>
+            <span class="skill-badge">Java (Basic)</span>
+            <span class="skill-badge">C (Basic)</span>
+          </div>
+        </div>
+
+        <!-- State Management -->
+        <div class="skills-card scroll-reveal">
+          <div class="skills-card-header">
+            <i data-lucide="git-branch" class="skills-icon"></i>
+            <h3>State Management</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">Riverpod</span>
+            <span class="skill-badge">BLoC</span>
+            <span class="skill-badge">Provider</span>
+            <span class="skill-badge">GetX</span>
+            <span class="skill-badge">Redux</span>
+          </div>
+        </div>
+
+        <!-- Architecture & Integrations -->
+        <div class="skills-card scroll-reveal">
+          <div class="skills-card-header">
+            <i data-lucide="layers" class="skills-icon"></i>
+            <h3>Architecture & API</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">Clean Architecture</span>
+            <span class="skill-badge">MVVM</span>
+            <span class="skill-badge">REST APIs</span>
+            <span class="skill-badge">WebSockets / Socket.io</span>
+            <span class="skill-badge">Firebase Suite</span>
+            <span class="skill-badge">Method Channels</span>
+          </div>
+        </div>
+
+        <!-- IoT & Hardware Connectivity -->
+        <div class="skills-card scroll-reveal">
+          <div class="skills-card-header">
+            <i data-lucide="cpu" class="skills-icon"></i>
+            <h3>IoT & Bluetooth</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">BLE (Bluetooth Low Energy)</span>
+            <span class="skill-badge">Bluetooth Classic</span>
+            <span class="skill-badge">ESP32 Interfacing</span>
+            <span class="skill-badge">STM32 Interfacing</span>
+            <span class="skill-badge">PSoC Interfacing</span>
+            <span class="skill-badge">Weighing Machines Integration</span>
+          </div>
+        </div>
+
+        <!-- Concurrency & Local Storage -->
+        <div class="skills-card scroll-reveal">
+          <div class="skills-card-header">
+            <i data-lucide="database" class="skills-icon"></i>
+            <h3>Concurrency & Storage</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">Streams</span>
+            <span class="skill-badge">Futures</span>
+            <span class="skill-badge">Isolates</span>
+            <span class="skill-badge">WorkManager</span>
+            <span class="skill-badge">Hive DB</span>
+            <span class="skill-badge">SQL</span>
+          </div>
+        </div>
+
+        <!-- Tools & Additional Skills -->
+        <div class="skills-card scroll-reveal">
+          <div class="skills-card-header">
+            <i data-lucide="settings" class="skills-icon"></i>
+            <h3>Tools & Workflow</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">Git & GitLab</span>
+            <span class="skill-badge">SVN Migration</span>
+            <span class="skill-badge">Agile / Scrum</span>
+            <span class="skill-badge">Push Notifications</span>
+            <span class="skill-badge">AES/RSA Encryption</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements & Education -->
+  <section id="achievements" class="section-padding section-alt">
+    <div class="container">
+      <div class="achievements-education-wrapper">
+        
+        <!-- Achievements Column -->
+        <div class="achievements-column">
+          <div class="section-header scroll-reveal">
+            <span class="section-subtitle">Highlights</span>
+            <h2 class="section-title">Achievements</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="achievements-list">
+            <div class="achievement-card scroll-reveal">
+              <div class="achievement-icon-wrapper">
+                <i data-lucide="award"></i>
+              </div>
+              <div class="achievement-info">
+                <h3>Special Recognition Award</h3>
+                <p>Received for outstanding development contributions and code stability enhancements to mobile applications.</p>
+              </div>
+            </div>
+            
+            <div class="achievement-card scroll-reveal">
+              <div class="achievement-icon-wrapper">
+                <i data-lucide="git-commit"></i>
+              </div>
+              <div class="achievement-info">
+                <h3>Git Migration Lead</h3>
+                <p>Successfully migrated organizational source trees from SVN to GitLab, increasing workflow efficiency and review pipelines.</p>
+              </div>
+            </div>
+
+            <div class="achievement-card scroll-reveal">
+              <div class="achievement-icon-wrapper">
+                <i data-lucide="check-circle-2"></i>
+              </div>
+              <div class="achievement-info">
+                <h3>Multi-Project Management</h3>
+                <p>Proven track record of delivering 4+ concurrent production applications in cross-functional Agile environments.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="education-column">
+          <div class="section-header scroll-reveal">
+            <span class="section-subtitle">Academia</span>
+            <h2 class="section-title">Education</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="education-card scroll-reveal">
+            <div class="education-icon-wrapper">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <div class="education-info">
+              <span class="education-date">2018 - 2021</span>
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p class="education-school">Bharathiar University, Coimbatore, India</p>
+              <p class="education-detail">Focused on Programming Paradigms, Data Structures, Algorithms, and Software Engineering Foundations.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-subtitle">Communication</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact details -->
+        <div class="contact-info-column scroll-reveal">
+          <h3>Let's start a conversation</h3>
+          <p>Whether you're looking to build an IoT-connected Flutter app, optimize weighing scales, or integrate secure offline synchronization, I am ready to join and guide the process.</p>
+          
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="detail-icon"><i data-lucide="mail"></i></div>
+              <div class="detail-text">
+                <span>Email Me</span>
+                <a href="mailto:trvishnuprasad1992@gmail.com">trvishnuprasad1992@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="detail-icon"><i data-lucide="phone"></i></div>
+              <div class="detail-text">
+                <span>Call Me</span>
+                <a href="tel:+918086304068">+91 8086304068</a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+              <div class="detail-text">
+                <span>Location</span>
+                <span>Kochi, Kerala, India</span>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="detail-icon"><i data-lucide="linkedin"></i></div>
+              <div class="detail-text">
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/vishnuprasadtr/" target="_blank" rel="noopener">linkedin.com/in/vishnuprasadtr/</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card scroll-reveal">
+          <form id="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully! (Demo Mode)');">
+            <div class="form-group">
+              <label for="form-name">Name</label>
+              <input type="text" id="form-name" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="5" placeholder="Let's build something awesome..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Send Message</span>
+              <i data-lucide="send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo"><span class="logo-accent">V</span>ishnuprasad T R</span>
+        <p>Architecting seamless Flutter and IoT cross-platform applications.</p>
+      </div>
+      <div class="footer-right">
+        <p>&copy; 2026 Vishnuprasad T R. All rights reserved.</p>
+        <p class="credit">Built with modern, responsive HTML &amp; Vanilla CSS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
