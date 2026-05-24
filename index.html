@@ -50,8 +50,8 @@
         <ul class="nav-list">
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#achievements" class="nav-link">Achievements</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -289,8 +289,153 @@
     </div>
   </section>
 
+  <!-- Featured Projects Section (Carousel Style) -->
+  <section id="projects" class="section-padding section-alt">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-subtitle">My Creations</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          A selection of enterprise ERP, ordering, and security tools I've architected and implemented using Flutter.
+        </p>
+      </div>
+
+      <div class="carousel-container scroll-reveal">
+        <button class="carousel-nav carousel-prev" id="projects-prev" aria-label="Previous project">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="projects-track">
+            <!-- Project 1: BMET Check -->
+            <article class="project-card" data-project-id="bmet_check">
+              <div class="project-image">
+                <img src="assets/images/bmet_check/1.webp" alt="BMET Check Application Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">BMET Check</h3>
+                <p class="project-card-desc">
+                  QR-code based mobile verification app focusing on high-speed scanner configurations, secure cryptographic token verification, and secure offline caching layers.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>QR Scanner</span>
+                  <span>Encryption</span>
+                  <span>Isolates</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
+                    <span>Play Store</span>
+                    <i data-lucide="external-link"></i>
+                  </a>
+                  <button class="project-gallery-btn" data-project="bmet_check">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Cybernet IT Solutions -->
+            <article class="project-card" data-project-id="cybernet_it">
+              <div class="project-image">
+                <img src="assets/images/cybernet_it/1.webp" alt="Cybernet IT Solutions Application Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">Cybernet IT Solutions</h3>
+                <p class="project-card-desc">
+                  Enterprise-grade ERP system mobilization, bridging core modules like HRMS, Finance, CRM, and procurement into an interactive dashboard workspace.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>Clean Architecture</span>
+                  <span>REST APIs</span>
+                  <span>MVVM</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
+                    <span>Play Store</span>
+                    <i data-lucide="external-link"></i>
+                  </a>
+                  <button class="project-gallery-btn" data-project="cybernet_it">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Cybernet Agro -->
+            <article class="project-card" data-project-id="cybernet_agro">
+              <div class="project-image">
+                <img src="assets/images/cybernet_agro/1.webp" alt="Cybernet Agro Application Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">Cybernet Agro</h3>
+                <p class="project-card-desc">
+                  Agro-industrial mobile application with real-time farm logistics tracking, automated produce weighing scale connectivity, offline batch recording, and localized crop inventory systems.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>IoT</span>
+                  <span>Local Storage</span>
+                  <span>BLE Weighing</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
+                    <span>Play Store</span>
+                    <i data-lucide="external-link"></i>
+                  </a>
+                  <button class="project-gallery-btn" data-project="cybernet_agro">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Redawa eOrder -->
+            <article class="project-card" data-project-id="eorder">
+              <div class="project-image">
+                <img src="assets/images/eorder/1.webp" alt="Redawa eOrder Application Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">Redawa eOrder</h3>
+                <p class="project-card-desc">
+                  Customer ordering mobile application featuring Bluetooth Low Energy (BLE) weighing machine integration, Firebase push notifications, and real-time inventory synchronization.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>BLE</span>
+                  <span>Firebase</span>
+                  <span>Streams</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
+                    <span>Play Store</span>
+                    <i data-lucide="external-link"></i>
+                  </a>
+                  <button class="project-gallery-btn" data-project="eorder">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        
+        <button class="carousel-nav carousel-next" id="projects-next" aria-label="Next project">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+      <div class="carousel-dots" id="projects-dots"></div>
+    </div>
+  </section>
+
   <!-- Achievements & Education -->
-  <section id="achievements" class="section-padding section-alt">
+  <section id="achievements" class="section-padding">
     <div class="container">
       <div class="achievements-education-wrapper">
         
@@ -355,155 +500,6 @@
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <!-- Featured Projects Section (Carousel Style) -->
-  <section id="projects" class="section-padding">
-    <div class="container">
-      <div class="section-header scroll-reveal">
-        <span class="section-subtitle">My Creations</span>
-        <h2 class="section-title">Projects</h2>
-        <div class="section-divider"></div>
-        <p class="section-description">
-          A selection of enterprise ERP, ordering, and security tools I've architected and implemented using Flutter.
-        </p>
-      </div>
-
-      <div class="carousel-container scroll-reveal">
-        <button class="carousel-nav carousel-prev" id="projects-prev" aria-label="Previous project">
-          <i data-lucide="chevron-left"></i>
-        </button>
-        
-        <div class="carousel-track-wrapper">
-          <div class="carousel-track" id="projects-track">
-            <!-- Project 1: BMET Check -->
-            <article class="project-card" data-project-id="bmet_check">
-              <div class="project-image">
-                <img src="assets/images/bmet_check/1.webp" alt="BMET Check Application Mockup">
-                <span class="project-category">Utility & Security</span>
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">BMET Check</h3>
-                <p class="project-card-desc">
-                  QR-code based mobile verification app focusing on high-speed scanner configurations, secure cryptographic token verification, and secure offline caching layers.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>QR Scanner</span>
-                  <span>Encryption</span>
-                  <span>Isolates</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
-                    <span>Play Store</span>
-                    <i data-lucide="external-link"></i>
-                  </a>
-                  <button class="project-gallery-btn" data-project="bmet_check">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 2: Cybernet IT Solutions -->
-            <article class="project-card" data-project-id="cybernet_it">
-              <div class="project-image">
-                <img src="assets/images/cybernet_it/1.webp" alt="Cybernet IT Solutions Application Mockup">
-                <span class="project-category">Enterprise ERP</span>
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">Cybernet IT Solutions</h3>
-                <p class="project-card-desc">
-                  Enterprise-grade ERP system mobilization, bridging core modules like HRMS, Finance, CRM, and procurement into an interactive dashboard workspace.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>Clean Architecture</span>
-                  <span>REST APIs</span>
-                  <span>MVVM</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
-                    <span>Play Store</span>
-                    <i data-lucide="external-link"></i>
-                  </a>
-                  <button class="project-gallery-btn" data-project="cybernet_it">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 3: Cybernet Agro -->
-            <article class="project-card" data-project-id="cybernet_agro">
-              <div class="project-image">
-                <img src="assets/images/cybernet_agro/1.webp" alt="Cybernet Agro Application Mockup">
-                <span class="project-category">Agriculture & Sync</span>
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">Cybernet Agro</h3>
-                <p class="project-card-desc">
-                  Agro-industrial mobile application with real-time farm logistics tracking, automated produce weighing scale connectivity, offline batch recording, and localized crop inventory systems.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>IoT</span>
-                  <span>Local Storage</span>
-                  <span>BLE Weighing</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
-                    <span>Play Store</span>
-                    <i data-lucide="external-link"></i>
-                  </a>
-                  <button class="project-gallery-btn" data-project="cybernet_agro">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 4: Redawa eOrder -->
-            <article class="project-card" data-project-id="eorder">
-              <div class="project-image">
-                <img src="assets/images/eorder/1.webp" alt="Redawa eOrder Application Mockup">
-                <span class="project-category">e-Commerce & Sync</span>
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">Redawa eOrder</h3>
-                <p class="project-card-desc">
-                  Customer ordering mobile application featuring Bluetooth Low Energy (BLE) weighing machine integration, Firebase push notifications, and real-time inventory synchronization.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>BLE</span>
-                  <span>Firebase</span>
-                  <span>Streams</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
-                    <span>Play Store</span>
-                    <i data-lucide="external-link"></i>
-                  </a>
-                  <button class="project-gallery-btn" data-project="eorder">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-        
-        <button class="carousel-nav carousel-next" id="projects-next" aria-label="Next project">
-          <i data-lucide="chevron-right"></i>
-        </button>
-      </div>
-      <div class="carousel-dots" id="projects-dots"></div>
     </div>
   </section>
 
