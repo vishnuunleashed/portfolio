@@ -1167,6 +1167,8 @@ footer {
     align-items: center;
     row-gap: 8px;
     padding: 8px 16px;
+    width: 100%;
+    overflow: hidden;
   }
   .logo {
     grid-column: 1;
