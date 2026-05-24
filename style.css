@@ -1165,8 +1165,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    row-gap: 8px;
-    padding: 8px 16px;
+    row-gap: 4px;
+    padding: 12px 12px 6px;
     width: 100%;
     overflow: hidden;
   }
@@ -1197,7 +1197,7 @@ footer {
     flex-direction: row !important;
     flex-wrap: nowrap;
     gap: 20px;
-    padding: 6px 4px;
+    padding: 4px 2px;
   }
   .mobile-nav-toggle {
     display: none !important;
