@@ -136,6 +136,8 @@
           <div class="skills-list">
             <span class="skill-badge">Dart</span>
             <span class="skill-badge">Flutter</span>
+            <span class="skill-badge">Kotlin (Native Android)</span>
+            <span class="skill-badge">Jetpack Compose</span>
           </div>
         </div>
 
@@ -148,6 +150,7 @@
           <div class="skills-list">
             <span class="skill-badge">Riverpod</span>
             <span class="skill-badge">Provider</span>
+            <span class="skill-badge">BLoC</span>
             <span class="skill-badge">GetX</span>
             <span class="skill-badge">Redux</span>
           </div>
@@ -173,11 +176,12 @@
         <div class="skills-card scroll-reveal">
           <div class="skills-card-header">
             <i data-lucide="cpu" class="skills-icon"></i>
-            <h3>IoT & Bluetooth</h3>
+            <h3>IoTs & Bluetooth</h3>
           </div>
           <div class="skills-list">
             <span class="skill-badge">IoT</span>
-            <span class="skill-badge">Bluetooth</span>
+            <span class="skill-badge">Bluetooth Low Energy (BLE)</span>
+            <span class="skill-badge">Bluetooth Classic</span>
           </div>
         </div>
 
@@ -193,7 +197,7 @@
             <span class="skill-badge">WorkManager</span>
             <span class="skill-badge">Flutter Migration</span>
             <span class="skill-badge">Hive</span>
-            <span class="skill-badge">Sqlite</span>
+            <span class="skill-badge">SQLite</span>
           </div>
         </div>
 
@@ -208,8 +212,10 @@
             <span class="skill-badge">SVN</span>
             <span class="skill-badge">Agile/Scrum</span>
             <span class="skill-badge">Jira</span>
-            <span class="skill-badge">AWS EC2</span>
-            <span class="skill-badge">AWS S3</span>
+            <span class="skill-badge">CI/CD Pipeline</span>
+            <span class="skill-badge">GitHub Actions</span>
+            <span class="skill-badge">Testing</span>
+            <span class="skill-badge">AWS EC2 / S3</span>
           </div>
         </div>
       </div>
@@ -236,9 +242,8 @@
               <h4 class="timeline-company">RAG Technologies, Kochi, Kerala</h4>
             </div>
             <ul class="timeline-body">
-              <li>Apple store deployment and Google Play Store deployment.</li>
-              <li>Maintaining the production applications.</li>
-              <li>Coordination of new feature implementation.</li>
+              <li>Designed scalable Flutter modules using Clean Architecture and MVVM, improving maintainability across multiple enterprise applications.</li>
+              <li>Expanded technical expertise by learning Native Android development with Kotlin.</li>
             </ul>
           </div>
         </div>
@@ -253,13 +258,16 @@
               <h4 class="timeline-company">Bayasys InfoTech Pvt Ltd, Kochi, Kerala</h4>
             </div>
             <ul class="timeline-body">
-              <li>Coordinated release on both Apple store deployment and Google Play Store deployment.</li>
+              <li>Coordinated release on both Apple store deployment and Google Play Store deployment of more than 6 applications.</li>
+              <li>Developed and maintained 6+ production Flutter applications, serving 1,000+ active users.</li>
               <li>Led the end-to-end implementation of GitLab, successfully migrating from Subversion (SVN) to enhance version control workflows.</li>
               <li>Worked in an Agile (Scrum) environment with 3-week sprints, delivering features consistently.</li>
               <li>Transforming the features of web-based ERP products into our mobile applications, aligning closely with their workflow.</li>
               <li>Optimized existing Firebase notification for better performance.</li>
-              <li>Integrated flutter application with weighing machine using BLE and Bluetooth Classic.</li>
+              <li>Integrated Flutter application with weighing machine using BLE and Bluetooth Classic.</li>
               <li>Applied Clean Architecture and MVVM to craft robust and scalable applications.</li>
+              <li>Worked with CI/CD pipelines and GitHub Actions.</li>
+              <li>Developed and maintained unit tests to ensure code quality and reliability.</li>
               <li>Worked with sockets for real-time communication features.</li>
             </ul>
           </div>
@@ -320,116 +328,104 @@
         </button>
         
         <div class="carousel-track-wrapper">
-          <div class="carousel-track" id="projects-track">
-            <!-- Project 1: BMET Check -->
-            <article class="project-card" data-project-id="bmet_check">
+            <!-- Project 1: Redawa ERP Suite -->
+            <article class="project-card" data-project-id="redawa_erp">
               <div class="project-image">
-                <img src="assets/images/bmet_check/1.webp" alt="BMET Check Application Mockup">
+                <img src="assets/images/eorder/1.webp" alt="Redawa ERP Suite Application Mockup">
               </div>
               <div class="project-info">
-                <h3 class="project-card-title">BMET Check</h3>
+                <h3 class="project-card-title">Redawa ERP Suite</h3>
                 <p class="project-card-desc">
-                  QR-code based mobile verification app focusing on high-speed scanner configurations, secure cryptographic token verification, and secure offline caching layers.
+                  Enterprise Flutter applications serving 1,000+ users across ERP, Agriculture, E-Commerce, Supplier Management, and Product Tracking. Integrates Bluetooth Classic weighing scales, offline-first SQLite caching, secure auth, and Firebase push notifications.
                 </p>
                 <div class="project-tags">
                   <span>Flutter</span>
-                  <span>QR Scanner</span>
-                  <span>Encryption</span>
-                  <span>Isolates</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
-                    <span>Play Store</span>
-                    <i data-lucide="external-link"></i>
-                  </a>
-                  <button class="project-gallery-btn" data-project="bmet_check">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 2: Cybernet IT Solutions -->
-            <article class="project-card" data-project-id="cybernet_it">
-              <div class="project-image">
-                <img src="assets/images/cybernet_it/1.webp" alt="Cybernet IT Solutions Application Mockup">
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">Cybernet IT Solutions</h3>
-                <p class="project-card-desc">
-                  Enterprise-grade ERP system mobilization, bridging core modules like HRMS, Finance, CRM, and procurement into an interactive dashboard workspace.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>Clean Architecture</span>
-                  <span>REST APIs</span>
-                  <span>MVVM</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
-                    <span>Play Store</span>
-                    <i data-lucide="external-link"></i>
-                  </a>
-                  <button class="project-gallery-btn" data-project="cybernet_it">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 3: Cybernet Agro -->
-            <article class="project-card" data-project-id="cybernet_agro">
-              <div class="project-image">
-                <img src="assets/images/cybernet_agro/1.webp" alt="Cybernet Agro Application Mockup">
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">Cybernet Agro</h3>
-                <p class="project-card-desc">
-                  Agro-industrial mobile application with real-time farm logistics tracking, automated produce weighing scale connectivity, offline batch recording, and localized crop inventory systems.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>IoT</span>
-                  <span>Local Storage</span>
-                  <span>BLE Weighing</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
-                    <span>Play Store</span>
-                    <i data-lucide="external-link"></i>
-                  </a>
-                  <button class="project-gallery-btn" data-project="cybernet_agro">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 4: Redawa eOrder -->
-            <article class="project-card" data-project-id="eorder">
-              <div class="project-image">
-                <img src="assets/images/eorder/1.webp" alt="Redawa eOrder Application Mockup">
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">Redawa eOrder</h3>
-                <p class="project-card-desc">
-                  Customer ordering mobile application featuring Bluetooth Low Energy (BLE) weighing machine integration, Firebase push notifications, and real-time inventory synchronization.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>BLE</span>
+                  <span>Riverpod / BLoC</span>
+                  <span>SQLite</span>
+                  <span>Bluetooth Classic</span>
                   <span>Firebase</span>
-                  <span>Streams</span>
                 </div>
                 <div class="project-links">
                   <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
                     <span>Play Store</span>
                     <i data-lucide="external-link"></i>
                   </a>
-                  <button class="project-gallery-btn" data-project="eorder">
+                  <button class="project-gallery-btn" data-project="redawa_erp">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Keechery Project Management System -->
+            <article class="project-card" data-project-id="keechery_pms">
+              <div class="project-image">
+                <img src="assets/images/cybernet_it/1.webp" alt="Keechery Project Management System Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">Keechery PMS</h3>
+                <p class="project-card-desc">
+                  Project Management System developed from scratch, featuring Dashboard Analytics, Support Requests, Observations, and an offline-first Document Management System with background REST API synchronization.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>Riverpod</span>
+                  <span>Hive</span>
+                  <span>.NET Core API</span>
+                  <span>PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                  <button class="project-gallery-btn" data-project="keechery_pms">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Houseboat Booking Application -->
+            <article class="project-card" data-project-id="houseboat_booking">
+              <div class="project-image">
+                <img src="assets/images/cybernet_agro/1.webp" alt="Houseboat Booking Application Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">Houseboat Booking App</h3>
+                <p class="project-card-desc">
+                  Tourism booking application for houseboats, kayaking, and rental services in Alappuzha. Designed responsive user interfaces for both vendors and customers with smooth search workflows.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>REST APIs</span>
+                  <span>Responsive UI</span>
+                </div>
+                <div class="project-links">
+                  <button class="project-gallery-btn" data-project="houseboat_booking">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Smart RO/UV IoT Monitoring System -->
+            <article class="project-card" data-project-id="smart_ro_iot">
+              <div class="project-image">
+                <img src="assets/images/bmet_check/1.webp" alt="Smart RO/UV IoT Monitoring System Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">Smart RO/UV IoT Monitor</h3>
+                <p class="project-card-desc">
+                  IoT monitoring app for remote control of purification systems. Utilizes BLE communication with ESP32/STM32 devices to monitor water level, purity, and mineral content in real time.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>BLoC</span>
+                  <span>BLE / IoT</span>
+                  <span>ESP32 / STM32</span>
+                </div>
+                <div class="project-links">
+                  <button class="project-gallery-btn" data-project="smart_ro_iot">
                     <span>Screenshots</span>
                     <i data-lucide="image"></i>
                   </button>

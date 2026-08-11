@@ -100,22 +100,14 @@ projectCards.forEach(card => {
 // Project Screenshot Gallery Lightbox Modal
 // ==========================================================================
 const projectGalleries = {
-  eorder: [
+  redawa_erp: [
     'assets/images/eorder/1.webp',
     'assets/images/eorder/2.webp',
     'assets/images/eorder/3.webp',
     'assets/images/eorder/4.webp',
     'assets/images/eorder/5.webp'
   ],
-  bmet_check: [
-    'assets/images/bmet_check/1.webp',
-    'assets/images/bmet_check/2.webp',
-    'assets/images/bmet_check/3.webp',
-    'assets/images/bmet_check/4.webp',
-    'assets/images/bmet_check/5.webp',
-    'assets/images/bmet_check/6.webp'
-  ],
-  cybernet_it: [
+  keechery_pms: [
     'assets/images/cybernet_it/1.webp',
     'assets/images/cybernet_it/2.webp',
     'assets/images/cybernet_it/3.webp',
@@ -123,10 +115,18 @@ const projectGalleries = {
     'assets/images/cybernet_it/5.webp',
     'assets/images/cybernet_it/6.webp'
   ],
-  cybernet_agro: [
+  houseboat_booking: [
     'assets/images/cybernet_agro/1.webp',
     'assets/images/cybernet_agro/2.webp',
     'assets/images/cybernet_agro/3.webp'
+  ],
+  smart_ro_iot: [
+    'assets/images/bmet_check/1.webp',
+    'assets/images/bmet_check/2.webp',
+    'assets/images/bmet_check/3.webp',
+    'assets/images/bmet_check/4.webp',
+    'assets/images/bmet_check/5.webp',
+    'assets/images/bmet_check/6.webp'
   ]
 };
 
