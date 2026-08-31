@@ -65,38 +65,6 @@ window.addEventListener('scroll', () => {
 });
 
 // ==========================================================================
-// Micro-interaction: Swap Hero Mockup Image based on Project Clicked
-// ==========================================================================
-const projectCards = document.querySelectorAll('.project-card');
-const heroMockupImg = document.getElementById('hero-mockup-img');
-
-projectCards.forEach(card => {
-  card.addEventListener('click', (e) => {
-    // If the click is inside a link or button (e.g. Play Store button), ignore it
-    if (e.target.closest('a') || e.target.closest('button')) {
-      return;
-    }
-
-    const cardImgSrc = card.querySelector('.project-image img').getAttribute('src');
-    
-    // Add smooth fading transition to swap
-    heroMockupImg.style.opacity = 0;
-    heroMockupImg.style.transform = 'scale(0.95)';
-    
-    setTimeout(() => {
-      heroMockupImg.setAttribute('src', cardImgSrc);
-      heroMockupImg.style.opacity = 1;
-      heroMockupImg.style.transform = 'scale(1)';
-    }, 200);
-    
-    // Smoothly scroll back to Hero section if on desktop so they can see it swap
-    if (window.innerWidth > 768) {
-      document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-
-// ==========================================================================
 // Project Screenshot Gallery Lightbox Modal
 // ==========================================================================
 const projectGalleries = {
