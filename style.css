@@ -347,7 +347,7 @@ header {
 
 .logo {
   font-family: var(--font-title);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 900;
   letter-spacing: -0.5px;
   white-space: nowrap;
@@ -444,6 +444,15 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.hero-name {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent-color-dark);
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
 }
 
 .hero-title {
