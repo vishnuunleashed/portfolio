@@ -58,7 +58,9 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* Smooth scrolling is handled by the custom eased scroll controller in
+     script.js -- native scroll-behavior:smooth would fight it, since both
+     would try to animate every scrollTo() call. */
   font-size: 14.5px;
   -webkit-text-size-adjust: 100%;
 }

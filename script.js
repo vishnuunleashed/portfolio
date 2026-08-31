@@ -19,6 +19,103 @@ navLinks.forEach(link => {
 });
 
 // ==========================================================================
+// Custom Eased Smooth Scroll (Flutter-style scroll physics for the web)
+// ==========================================================================
+// Instead of relying on the browser's native (linear, instant) wheel scroll,
+// this intercepts wheel input and animates window.scrollY toward a moving
+// target with exponential easing every frame -- the same "catch up to a
+// target with a damping factor" model used by ScrollPhysics/AnimationController
+// in Flutter, giving the page a smooth, weighted, momentum-like feel.
+const smoothScroll = (() => {
+  const EASE = 0.09; // lower = smoother/slower catch-up, higher = snappier
+  const STOP_THRESHOLD = 0.5;
+  let current = window.scrollY;
+  let target = window.scrollY;
+  let rafId = null;
+
+  function maxScroll() {
+    return document.documentElement.scrollHeight - window.innerHeight;
+  }
+
+  function clamp(value) {
+    return Math.max(0, Math.min(value, maxScroll()));
+  }
+
+  function step() {
+    current += (target - current) * EASE;
+
+    if (Math.abs(target - current) < STOP_THRESHOLD) {
+      current = target;
+      window.scrollTo({ top: current, left: 0, behavior: 'auto' });
+      rafId = null;
+      return;
+    }
+
+    window.scrollTo({ top: current, left: 0, behavior: 'auto' });
+    rafId = requestAnimationFrame(step);
+  }
+
+  function ensureRunning() {
+    if (rafId === null) {
+      rafId = requestAnimationFrame(step);
+    }
+  }
+
+  function isScrollLocked(el) {
+    // Elements with their own scroll region (horizontal nav, lightbox
+    // thumbnails) should keep native wheel behavior; and don't hijack
+    // scrolling while the fullscreen lightbox modal is open.
+    const galleryModal = document.getElementById('gallery-modal');
+    if (galleryModal && galleryModal.classList.contains('active')) return true;
+    return !!(el.closest('#nav-menu') || el.closest('.lightbox-thumbnails-wrapper'));
+  }
+
+  window.addEventListener('wheel', (e) => {
+    if (isScrollLocked(e.target)) return;
+    e.preventDefault();
+    target = clamp(target + e.deltaY);
+    ensureRunning();
+  }, { passive: false });
+
+  // Keep our internal state in sync with any scroll that happens outside
+  // our own animation loop (keyboard, scrollbar drag, programmatic jumps).
+  window.addEventListener('scroll', () => {
+    if (rafId === null) {
+      current = window.scrollY;
+      target = window.scrollY;
+    }
+  }, { passive: true });
+
+  window.addEventListener('resize', () => {
+    target = clamp(target);
+  });
+
+  return {
+    scrollTo(y) {
+      target = clamp(y);
+      ensureRunning();
+    }
+  };
+})();
+
+// Route in-page anchor links through the eased scroll instead of an
+// instant/native jump, offsetting for the fixed header height.
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const hash = link.getAttribute('href');
+    if (!hash || hash === '#') return;
+
+    const targetEl = document.querySelector(hash);
+    if (!targetEl) return;
+
+    e.preventDefault();
+    const headerOffset = document.getElementById('main-header').offsetHeight + 12;
+    const destination = targetEl.getBoundingClientRect().top + window.scrollY - headerOffset;
+    smoothScroll.scrollTo(destination);
+  });
+});
+
+// ==========================================================================
 // Intersection Observer for Scroll Reveal Animations
 // ==========================================================================
 const revealElements = document.querySelectorAll('.scroll-reveal');
