@@ -227,6 +227,20 @@ document.querySelectorAll('.project-gallery-btn').forEach(btn => {
   });
 });
 
+// Clicking anywhere on a project card opens its screenshot gallery
+document.querySelectorAll('.project-card[data-project-id]').forEach(card => {
+  card.addEventListener('click', (e) => {
+    // If the click is inside a link or button (e.g. Play Store, View Repo), let it act normally
+    if (e.target.closest('a') || e.target.closest('button')) {
+      return;
+    }
+    const proj = card.getAttribute('data-project-id');
+    if (projectGalleries[proj]) {
+      openGallery(proj);
+    }
+  });
+});
+
 function prevImage() {
   const images = projectGalleries[currentProject];
   if (!images) return;

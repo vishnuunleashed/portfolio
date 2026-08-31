@@ -1523,9 +1523,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   padding: 0 40px;
   flex-grow: 1;
 }
@@ -1560,11 +1560,12 @@ footer {
 
 .lightbox-phone {
   position: relative;
-  width: 250px;
-  height: 500px;
+  height: min(760px, 78vh);
+  aspect-ratio: 1 / 2;
+  width: auto;
   background-color: #1e293b;
   border: 8px solid #0f172a;
-  border-radius: 32px;
+  border-radius: 36px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.5);
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -1644,8 +1645,7 @@ footer {
     height: 44px;
   }
   .lightbox-phone {
-    width: 200px;
-    height: 400px;
+    height: min(460px, 62vh);
   }
   .lightbox-close {
     top: 15px;
