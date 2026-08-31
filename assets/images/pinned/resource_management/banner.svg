@@ -1,0 +1,45 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0172A3"/>
+      <stop offset="55%" stop-color="#0298DB"/>
+      <stop offset="100%" stop-color="#4DB8F0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="360" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#glow)"/>
+
+  <!-- decorative grid dots -->
+  <g fill="#ffffff" opacity="0.08">
+    <circle cx="1120" cy="80" r="3"/>
+    <circle cx="1160" cy="80" r="3"/>
+    <circle cx="1200" cy="80" r="3"/>
+    <circle cx="1120" cy="120" r="3"/>
+    <circle cx="1160" cy="120" r="3"/>
+    <circle cx="1200" cy="120" r="3"/>
+    <circle cx="1120" cy="160" r="3"/>
+    <circle cx="1160" cy="160" r="3"/>
+    <circle cx="1200" cy="160" r="3"/>
+  </g>
+
+  <!-- App icon mark -->
+  <g transform="translate(90,120)">
+    <rect width="120" height="120" rx="28" fill="#ffffff" opacity="0.95"/>
+    <rect x="26" y="26" width="28" height="28" rx="6" fill="#0298DB"/>
+    <rect x="66" y="26" width="28" height="28" rx="6" fill="#0298DB"/>
+    <rect x="26" y="66" width="28" height="28" rx="6" fill="#0298DB"/>
+    <path d="M74 74 h20 M84 64 v20" stroke="#0298DB" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Title block -->
+  <g transform="translate(250,110)">
+    <text x="0" y="55" font-family="'Segoe UI', Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Resource Portal</text>
+    <text x="0" y="98" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="500" fill="#EAF4FB">Plan people, projects and budgets from one clean mobile console.</text>
+    <text x="0" y="140" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600" fill="#CCEBF8">Flutter &#8226; Riverpod &#8226; go_router</text>
+  </g>
+</svg>

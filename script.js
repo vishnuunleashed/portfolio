@@ -127,6 +127,36 @@ const projectGalleries = {
     'assets/images/bmet_check/4.webp',
     'assets/images/bmet_check/5.webp',
     'assets/images/bmet_check/6.webp'
+  ],
+  waste_classifier: [
+    'assets/images/pinned/waste_classifier/1.webp',
+    'assets/images/pinned/waste_classifier/2.webp',
+    'assets/images/pinned/waste_classifier/3.webp',
+    'assets/images/pinned/waste_classifier/4.webp'
+  ],
+  taskflow: [
+    'assets/images/pinned/taskflow/1.webp',
+    'assets/images/pinned/taskflow/2.webp',
+    'assets/images/pinned/taskflow/3.webp',
+    'assets/images/pinned/taskflow/4.webp'
+  ],
+  github_explorer: [
+    'assets/images/pinned/github_explorer/1.webp',
+    'assets/images/pinned/github_explorer/2.webp',
+    'assets/images/pinned/github_explorer/3.webp',
+    'assets/images/pinned/github_explorer/4.webp'
+  ],
+  resource_management: [
+    'assets/images/pinned/resource_management/1.webp',
+    'assets/images/pinned/resource_management/2.webp',
+    'assets/images/pinned/resource_management/3.webp',
+    'assets/images/pinned/resource_management/4.webp'
+  ],
+  court_click: [
+    'assets/images/pinned/court_click/1.webp',
+    'assets/images/pinned/court_click/2.webp',
+    'assets/images/pinned/court_click/3.webp',
+    'assets/images/pinned/court_click/4.webp'
   ]
 };
 
