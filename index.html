@@ -48,8 +48,8 @@
       <!-- Navigation Links -->
       <nav id="nav-menu">
         <ul class="nav-list">
-          <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#opensource" class="nav-link">Open Source</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#achievements" class="nav-link">Achievements</a></li>
@@ -83,7 +83,7 @@
           I design and ship high-performance Flutter applications using Clean Architecture, MVVM, Riverpod, BLoC, BLE, WebSockets, Firebase, and REST APIs &mdash; from offline-first ERP systems to IoT device integrations, published on the Google Play Store and Apple App Store.
         </p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-secondary">
+          <a href="#opensource" class="btn btn-secondary">
             <span>View My Work</span>
             <i data-lucide="arrow-right"></i>
           </a>
@@ -112,7 +112,7 @@
         <div class="phone-mockup">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <img src="assets/images/bmet_check/1.webp" alt="Mobile App BLE Mockup Demo" id="hero-mockup-img">
+            <img src="assets/images/pinned/waste_classifier/1.webp" alt="Waste Classifier app UI showing home and bin-guide screens" id="hero-mockup-img">
           </div>
         </div>
       </div>
@@ -145,142 +145,8 @@
   </section>
 
 
-<!-- Featured Projects Section (Carousel Style) -->
-  <section id="projects" class="section-padding section-alt">
-    <div class="container">
-      <div class="section-header scroll-reveal">
-        <span class="section-subtitle">My Creations</span>
-        <h2 class="section-title">Projects</h2>
-        <div class="section-divider"></div>
-        <p class="section-description">
-          A selection of enterprise ERP, ordering, and security tools I've architected and implemented using Flutter.
-        </p>
-      </div>
-
-      <div class="carousel-container scroll-reveal">
-        <button class="carousel-nav carousel-prev" id="projects-prev" aria-label="Previous project">
-          <i data-lucide="chevron-left"></i>
-        </button>
-        
-        <div class="carousel-track-wrapper">
-          <div class="carousel-track" id="projects-track">
-            <!-- Project 1: Redawa ERP Suite -->
-            <article class="project-card" data-project-id="redawa_erp">
-              <div class="project-image">
-                <img src="assets/images/eorder/1.webp" alt="Redawa ERP Suite Application Mockup">
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">Redawa ERP Suite</h3>
-                <p class="project-card-desc">
-                  Enterprise Flutter applications serving 1,000+ users across ERP, Agriculture, E-Commerce, Supplier Management, and Product Tracking. Integrates Bluetooth Classic weighing scales, offline-first SQLite caching, secure auth, and Firebase push notifications.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>Riverpod / BLoC</span>
-                  <span>SQLite</span>
-                  <span>Bluetooth Classic</span>
-                  <span>Firebase</span>
-                </div>
-                <div class="project-links">
-                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
-                    <span>Play Store</span>
-                    <i data-lucide="external-link"></i>
-                  </a>
-                  <button class="project-gallery-btn" data-project="redawa_erp">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 2: Keechery Project Management System -->
-            <article class="project-card" data-project-id="keechery_pms">
-              <div class="project-image">
-                <img src="assets/images/cybernet_it/1.webp" alt="Keechery Project Management System Mockup">
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">Keechery PMS</h3>
-                <p class="project-card-desc">
-                  Project Management System developed from scratch, featuring Dashboard Analytics, Support Requests, Observations, and an offline-first Document Management System with background REST API synchronization.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>Riverpod</span>
-                  <span>Hive</span>
-                  <span>.NET Core API</span>
-                  <span>PostgreSQL</span>
-                </div>
-                <div class="project-links">
-                  <button class="project-gallery-btn" data-project="keechery_pms">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 3: Houseboat Booking Application -->
-            <article class="project-card" data-project-id="houseboat_booking">
-              <div class="project-image">
-                <img src="assets/images/cybernet_agro/1.webp" alt="Houseboat Booking Application Mockup">
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">Houseboat Booking App</h3>
-                <p class="project-card-desc">
-                  Tourism booking application for houseboats, kayaking, and rental services in Alappuzha. Designed responsive user interfaces for both vendors and customers with smooth search workflows.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>REST APIs</span>
-                  <span>Responsive UI</span>
-                </div>
-                <div class="project-links">
-                  <button class="project-gallery-btn" data-project="houseboat_booking">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 4: Smart RO/UV IoT Monitoring System -->
-            <article class="project-card" data-project-id="smart_ro_iot">
-              <div class="project-image">
-                <img src="assets/images/bmet_check/1.webp" alt="Smart RO/UV IoT Monitoring System Mockup">
-              </div>
-              <div class="project-info">
-                <h3 class="project-card-title">Smart RO/UV IoT Monitor</h3>
-                <p class="project-card-desc">
-                  IoT monitoring app for remote control of purification systems. Utilizes BLE communication with ESP32/STM32 devices to monitor water level, purity, and mineral content in real time.
-                </p>
-                <div class="project-tags">
-                  <span>Flutter</span>
-                  <span>BLoC</span>
-                  <span>BLE / IoT</span>
-                  <span>ESP32 / STM32</span>
-                </div>
-                <div class="project-links">
-                  <button class="project-gallery-btn" data-project="smart_ro_iot">
-                    <span>Screenshots</span>
-                    <i data-lucide="image"></i>
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-        
-        <button class="carousel-nav carousel-next" id="projects-next" aria-label="Next project">
-          <i data-lucide="chevron-right"></i>
-        </button>
-      </div>
-      <div class="carousel-dots" id="projects-dots"></div>
-    </div>
-  </section>
-
-  <!-- Open Source Highlights (Pinned GitHub Repositories) -->
-  <section id="opensource" class="section-padding">
+<!-- Open Source Highlights (Pinned GitHub Repositories) -->
+  <section id="opensource" class="section-padding section-alt">
     <div class="container">
       <div class="section-header scroll-reveal">
         <span class="section-subtitle">Pinned on GitHub</span>
@@ -450,6 +316,140 @@
           <i data-lucide="arrow-up-right"></i>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section (Carousel Style) -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-subtitle">My Creations</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          A selection of enterprise ERP, ordering, and security tools I've architected and implemented using Flutter.
+        </p>
+      </div>
+
+      <div class="carousel-container scroll-reveal">
+        <button class="carousel-nav carousel-prev" id="projects-prev" aria-label="Previous project">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track" id="projects-track">
+            <!-- Project 1: Redawa ERP Suite -->
+            <article class="project-card" data-project-id="redawa_erp">
+              <div class="project-image">
+                <img src="assets/images/eorder/1.webp" alt="Redawa ERP Suite Application Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">Redawa ERP Suite</h3>
+                <p class="project-card-desc">
+                  Enterprise Flutter applications serving 1,000+ users across ERP, Agriculture, E-Commerce, Supplier Management, and Product Tracking. Integrates Bluetooth Classic weighing scales, offline-first SQLite caching, secure auth, and Firebase push notifications.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>Riverpod / BLoC</span>
+                  <span>SQLite</span>
+                  <span>Bluetooth Classic</span>
+                  <span>Firebase</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://play.google.com/store/apps/developer?id=Cybernet+ITS" target="_blank" rel="noopener" class="project-link-btn">
+                    <span>Play Store</span>
+                    <i data-lucide="external-link"></i>
+                  </a>
+                  <button class="project-gallery-btn" data-project="redawa_erp">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Keechery Project Management System -->
+            <article class="project-card" data-project-id="keechery_pms">
+              <div class="project-image">
+                <img src="assets/images/cybernet_it/1.webp" alt="Keechery Project Management System Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">Keechery PMS</h3>
+                <p class="project-card-desc">
+                  Project Management System developed from scratch, featuring Dashboard Analytics, Support Requests, Observations, and an offline-first Document Management System with background REST API synchronization.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>Riverpod</span>
+                  <span>Hive</span>
+                  <span>.NET Core API</span>
+                  <span>PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                  <button class="project-gallery-btn" data-project="keechery_pms">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Houseboat Booking Application -->
+            <article class="project-card" data-project-id="houseboat_booking">
+              <div class="project-image">
+                <img src="assets/images/cybernet_agro/1.webp" alt="Houseboat Booking Application Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">Houseboat Booking App</h3>
+                <p class="project-card-desc">
+                  Tourism booking application for houseboats, kayaking, and rental services in Alappuzha. Designed responsive user interfaces for both vendors and customers with smooth search workflows.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>REST APIs</span>
+                  <span>Responsive UI</span>
+                </div>
+                <div class="project-links">
+                  <button class="project-gallery-btn" data-project="houseboat_booking">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Smart RO/UV IoT Monitoring System -->
+            <article class="project-card" data-project-id="smart_ro_iot">
+              <div class="project-image">
+                <img src="assets/images/bmet_check/1.webp" alt="Smart RO/UV IoT Monitoring System Mockup">
+              </div>
+              <div class="project-info">
+                <h3 class="project-card-title">Smart RO/UV IoT Monitor</h3>
+                <p class="project-card-desc">
+                  IoT monitoring app for remote control of purification systems. Utilizes BLE communication with ESP32/STM32 devices to monitor water level, purity, and mineral content in real time.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>BLoC</span>
+                  <span>BLE / IoT</span>
+                  <span>ESP32 / STM32</span>
+                </div>
+                <div class="project-links">
+                  <button class="project-gallery-btn" data-project="smart_ro_iot">
+                    <span>Screenshots</span>
+                    <i data-lucide="image"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        
+        <button class="carousel-nav carousel-next" id="projects-next" aria-label="Next project">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
+      <div class="carousel-dots" id="projects-dots"></div>
     </div>
   </section>
 
