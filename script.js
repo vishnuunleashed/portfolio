@@ -274,109 +274,6 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ==========================================================================
-// Projects Carousel Slider Logic
-// ==========================================================================
-function initProjectsCarousel() {
-  const track = document.getElementById('projects-track');
-  const prevBtn = document.getElementById('projects-prev');
-  const nextBtn = document.getElementById('projects-next');
-  const dotsContainer = document.getElementById('projects-dots');
-  const cards = Array.from(track.children);
-  
-  if (!track || !prevBtn || !nextBtn || !dotsContainer || !cards.length) return;
-  
-  let currentIndex = 0;
-  
-  // Calculate items per view based on window width
-  function getItemsPerView() {
-    if (window.innerWidth <= 600) return 1;
-    if (window.innerWidth <= 992) return 2;
-    return 3;
-  }
-  
-  function getMaxIndex() {
-    return Math.max(0, cards.length - getItemsPerView());
-  }
-  
-  function updateCarousel() {
-    const itemsPerView = getItemsPerView();
-    
-    // Safety check for index out of bounds on resize
-    const maxIdx = getMaxIndex();
-    if (currentIndex > maxIdx) {
-      currentIndex = maxIdx;
-    }
-    
-    // Calculate slide percentage based on gap (24px)
-    const cardWidth = cards[0].getBoundingClientRect().width;
-    const offset = currentIndex * (cardWidth + 24); // card width + gap
-    
-    track.style.transform = `translateX(-${offset}px)`;
-    
-    // Update nav button disabled state
-    prevBtn.style.opacity = currentIndex === 0 ? '0.3' : '1';
-    prevBtn.style.pointerEvents = currentIndex === 0 ? 'none' : 'auto';
-    
-    nextBtn.style.opacity = currentIndex === maxIdx ? '0.3' : '1';
-    nextBtn.style.pointerEvents = currentIndex === maxIdx ? 'none' : 'auto';
-    
-    // Update dots
-    const dots = Array.from(dotsContainer.children);
-    dots.forEach((dot, idx) => {
-      dot.classList.toggle('active', idx === currentIndex);
-    });
-  }
-  
-  // Render pagination dots
-  function renderDots() {
-    dotsContainer.innerHTML = '';
-    const maxIdx = getMaxIndex();
-    
-    // Only render dots if there's actually a need to scroll
-    if (maxIdx <= 0) return;
-    
-    for (let i = 0; i <= maxIdx; i++) {
-      const dot = document.createElement('div');
-      dot.className = `carousel-dot ${i === currentIndex ? 'active' : ''}`;
-      dot.addEventListener('click', () => {
-        currentIndex = i;
-        updateCarousel();
-      });
-      dotsContainer.appendChild(dot);
-    }
-  }
-  
-  prevBtn.addEventListener('click', () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateCarousel();
-    }
-  });
-  
-  nextBtn.addEventListener('click', () => {
-    const maxIdx = getMaxIndex();
-    if (currentIndex < maxIdx) {
-      currentIndex++;
-      updateCarousel();
-    }
-  });
-  
-  // Responsive resize handler
-  let resizeTimeout;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
-      renderDots();
-      updateCarousel();
-    }, 100);
-  });
-  
-  // Initialize
-  renderDots();
-  updateCarousel();
-}
-
-// ==========================================================================
 // Contact Form Submission (FormSubmit.co API Integration)
 // ==========================================================================
 function initContactForm() {
@@ -438,11 +335,10 @@ function initContactForm() {
 }
 
 // ==========================================================================
-// Initialize Lucide Icons, Carousel, Contact Form & Header Scroll effect
+// Initialize Lucide Icons, Contact Form & Header Scroll effect
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
   lucide.createIcons();
-  initProjectsCarousel();
   initContactForm();
 });
 
