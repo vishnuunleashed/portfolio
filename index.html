@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Primary Meta Tags -->
   <title>Vishnuprasad T R | Senior Flutter Developer Portfolio</title>
   <meta name="title" content="Vishnuprasad T R | Senior Flutter Developer Portfolio">
   <meta name="description" content="Portfolio of Vishnuprasad T R, a Senior Flutter Developer specializing in clean architecture, offline-first database synchronization, background tasks, Firebase integrations, and cross-platform app publishing.">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Vishnuprasad T R | Senior Flutter Developer">
@@ -18,11 +18,11 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  
+
   <!-- Custom Stylesheets -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -38,7 +38,7 @@
       <a href="#hero" class="logo">
         <span class="logo-accent">V</span>ishnuprasad T R
       </a>
-      
+
       <!-- Mobile Nav Toggle -->
       <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
         <i data-lucide="menu" class="icon-menu"></i>
@@ -48,17 +48,20 @@
       <!-- Navigation Links -->
       <nav id="nav-menu">
         <ul class="nav-list">
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#opensource" class="nav-link">Open Source</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#achievements" class="nav-link">Achievements</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
-      <!-- Action Area: Resume -->
+      <!-- Action Area: Contact + Resume -->
       <div class="header-actions">
+        <a href="#contact" class="btn btn-contact-pill" id="btn-contact">
+          <span>Contact</span>
+          <i data-lucide="mail"></i>
+        </a>
         <a href="assets/resume.pdf" class="btn btn-primary" id="btn-resume" download="Vishnuprasad_TR_Resume.pdf">
           <span>Resume</span>
           <i data-lucide="download"></i>
@@ -71,13 +74,13 @@
   <section id="hero" class="hero-section">
     <div class="hero-container">
       <div class="hero-content scroll-reveal">
-        <span class="badge hero-badge">Vishnuprasad T R</span>
+        <span class="badge hero-badge">Available for freelance &amp; full-time roles</span>
         <h1 class="hero-title">
           Flutter Developer <br>
-          <span class="text-gradient">with 4+ years of experience</span>
+          <span class="text-gradient">building production mobile apps.</span>
         </h1>
         <p class="hero-description">
-          Flutter Developer specializing in scalable cross-platform mobile applications, IoT integrations, and real-time enterprise solutions. I have 4+ years of experience building high-performance Flutter applications using Clean Architecture, MVVM, Riverpod, BLoC, BLE, WebSockets, Firebase, and REST APIs. Experienced in offline-first workflows, background processing, ERP mobile systems, and integrating embedded devices such as ESP32, STM32, and PSoC. Proven track record of delivering production-ready applications and managing deployments to the Google Play Store and Apple App Store in Agile development environments.
+          I design and ship high-performance Flutter applications using Clean Architecture, MVVM, Riverpod, BLoC, BLE, WebSockets, Firebase, and REST APIs &mdash; from offline-first ERP systems to IoT device integrations, published on the Google Play Store and Apple App Store.
         </p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-secondary">
@@ -86,7 +89,7 @@
           </a>
           <a href="#contact" class="btn btn-outline">Let's Connect</a>
         </div>
-        
+
         <!-- Social Profile Quicklinks -->
         <div class="hero-socials">
           <a href="https://www.linkedin.com/in/vishnuprasadtr/" target="_blank" rel="noopener" class="social-link" title="LinkedIn Profile">
@@ -103,7 +106,7 @@
           </a>
         </div>
       </div>
-      
+
       <!-- Visual Element - CSS Phone Mockup -->
       <div class="hero-visual scroll-reveal">
         <div class="phone-mockup">
@@ -114,217 +117,35 @@
         </div>
       </div>
     </div>
-  </section>
 
-
-
-  <!-- Technical Skills Grid -->
-  <section id="skills" class="section-padding section-alt">
-    <div class="container">
-      <div class="section-header scroll-reveal">
-        <span class="section-subtitle">Proficiencies</span>
-        <h2 class="section-title">Technical Expertise</h2>
-        <div class="section-divider"></div>
-      </div>
-
-      <div class="skills-grid">
-        <!-- Languages & Frameworks -->
-        <div class="skills-card scroll-reveal">
-          <div class="skills-card-header">
-            <i data-lucide="code-2" class="skills-icon"></i>
-            <h3>Languages & Frameworks</h3>
-          </div>
-          <div class="skills-list">
-            <span class="skill-badge">Dart</span>
-            <span class="skill-badge">Flutter</span>
-            <span class="skill-badge">Kotlin (Native Android)</span>
-            <span class="skill-badge">Jetpack Compose</span>
-          </div>
+    <!-- Credibility Stat Strip -->
+    <div class="stat-strip scroll-reveal">
+      <div class="container stat-strip-inner">
+        <div class="stat-item">
+          <span class="stat-number">4+</span>
+          <span class="stat-label">Years Experience</span>
         </div>
-
-        <!-- State Management -->
-        <div class="skills-card scroll-reveal">
-          <div class="skills-card-header">
-            <i data-lucide="git-branch" class="skills-icon"></i>
-            <h3>State Management</h3>
-          </div>
-          <div class="skills-list">
-            <span class="skill-badge">Riverpod</span>
-            <span class="skill-badge">Provider</span>
-            <span class="skill-badge">BLoC</span>
-            <span class="skill-badge">GetX</span>
-            <span class="skill-badge">Redux</span>
-          </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Apps Shipped</span>
         </div>
-
-        <!-- Architecture & Integrations -->
-        <div class="skills-card scroll-reveal">
-          <div class="skills-card-header">
-            <i data-lucide="layers" class="skills-icon"></i>
-            <h3>Architecture & API</h3>
-          </div>
-          <div class="skills-list">
-            <span class="skill-badge">Clean Architecture</span>
-            <span class="skill-badge">MVVM</span>
-            <span class="skill-badge">REST APIs</span>
-            <span class="skill-badge">Sockets</span>
-            <span class="skill-badge">Firebase Push Notifications</span>
-            <span class="skill-badge">Method Channels</span>
-          </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">1,000+</span>
+          <span class="stat-label">Active Users</span>
         </div>
-
-        <!-- IoT & Hardware Connectivity -->
-        <div class="skills-card scroll-reveal">
-          <div class="skills-card-header">
-            <i data-lucide="cpu" class="skills-icon"></i>
-            <h3>IoTs & Bluetooth</h3>
-          </div>
-          <div class="skills-list">
-            <span class="skill-badge">IoT</span>
-            <span class="skill-badge">Bluetooth Low Energy (BLE)</span>
-            <span class="skill-badge">Bluetooth Classic</span>
-          </div>
-        </div>
-
-        <!-- Concurrency & Local Storage -->
-        <div class="skills-card scroll-reveal">
-          <div class="skills-card-header">
-            <i data-lucide="database" class="skills-icon"></i>
-            <h3>Concurrency & Storage</h3>
-          </div>
-          <div class="skills-list">
-            <span class="skill-badge">Asynchronous Programming</span>
-            <span class="skill-badge">Isolates</span>
-            <span class="skill-badge">WorkManager</span>
-            <span class="skill-badge">Flutter Migration</span>
-            <span class="skill-badge">Hive</span>
-            <span class="skill-badge">SQLite</span>
-          </div>
-        </div>
-
-        <!-- Tools & Additional Skills -->
-        <div class="skills-card scroll-reveal">
-          <div class="skills-card-header">
-            <i data-lucide="settings" class="skills-icon"></i>
-            <h3>Tools & Workflow</h3>
-          </div>
-          <div class="skills-list">
-            <span class="skill-badge">GitLab</span>
-            <span class="skill-badge">SVN</span>
-            <span class="skill-badge">Agile/Scrum</span>
-            <span class="skill-badge">Jira</span>
-            <span class="skill-badge">CI/CD Pipeline</span>
-            <span class="skill-badge">GitHub Actions</span>
-            <span class="skill-badge">Testing</span>
-            <span class="skill-badge">AWS EC2 / S3</span>
-          </div>
-        </div>
-
-        <!-- AI & Agentic Tooling -->
-        <div class="skills-card scroll-reveal">
-          <div class="skills-card-header">
-            <i data-lucide="sparkles" class="skills-icon"></i>
-            <h3>AI & Agentic Tooling</h3>
-          </div>
-          <div class="skills-list">
-            <span class="skill-badge">Agentic Coding</span>
-            <span class="skill-badge">TensorFlow Lite</span>
-            <span class="skill-badge">On-device ML</span>
-          </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">2</span>
+          <span class="stat-label">App Stores Published</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="section-padding">
-    <div class="container">
-      <div class="section-header scroll-reveal">
-        <span class="section-subtitle">My Career Path</span>
-        <h2 class="section-title">Work Experience</h2>
-        <div class="section-divider"></div>
-      </div>
 
-      <div class="timeline">
-        <!-- Experience 1: RAG Technologies -->
-        <div class="timeline-item scroll-reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-date">May 2026 - Present</span>
-              <h3 class="timeline-role">Freelance Software Developer</h3>
-              <h4 class="timeline-company">RAG Technologies, Kochi, Kerala</h4>
-            </div>
-            <ul class="timeline-body">
-              <li>Designed scalable Flutter modules using Clean Architecture and MVVM, improving maintainability across multiple enterprise applications.</li>
-              <li>Expanded technical expertise by learning Native Android development with Kotlin.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Experience 2: Bayasys -->
-        <div class="timeline-item scroll-reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-date">March 2023 - May 2026</span>
-              <h3 class="timeline-role">Software Developer</h3>
-              <h4 class="timeline-company">Bayasys InfoTech Pvt Ltd, Kochi, Kerala</h4>
-            </div>
-            <ul class="timeline-body">
-              <li>Coordinated release on both Apple store deployment and Google Play Store deployment of more than 6 applications.</li>
-              <li>Developed and maintained 6+ production Flutter applications, serving 1,000+ active users.</li>
-              <li>Led the end-to-end implementation of GitLab, successfully migrating from Subversion (SVN) to enhance version control workflows.</li>
-              <li>Worked in an Agile (Scrum) environment with 3-week sprints, delivering features consistently.</li>
-              <li>Transforming the features of web-based ERP products into our mobile applications, aligning closely with their workflow.</li>
-              <li>Optimized existing Firebase notification for better performance.</li>
-              <li>Integrated Flutter application with weighing machine using BLE and Bluetooth Classic.</li>
-              <li>Applied Clean Architecture and MVVM to craft robust and scalable applications.</li>
-              <li>Worked with CI/CD pipelines and GitHub Actions.</li>
-              <li>Developed and maintained unit tests to ensure code quality and reliability.</li>
-              <li>Worked with sockets for real-time communication features.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Experience 3: Skyewall -->
-        <div class="timeline-item scroll-reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-date">February 2022 - February 2023</span>
-              <h3 class="timeline-role">Software Developer</h3>
-              <h4 class="timeline-company">Skyewall, Kochi, Kerala</h4>
-            </div>
-            <ul class="timeline-body">
-              <li>Maintenance and development of houseboat booking applications.</li>
-              <li>Responsive UI and enforced a booking feature for reserving houseboats, kayaking boats, and rentals. Created a seamless user experience for both vendors and customers.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Experience 4: Highminds Systems India Corporation -->
-        <div class="timeline-item scroll-reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <span class="timeline-date">February 2022 - October 2022</span>
-              <h3 class="timeline-role">Freelance Software Developer</h3>
-              <h4 class="timeline-company">Highminds Systems India Corporation, Bengaluru, Karnataka</h4>
-            </div>
-            <ul class="timeline-body">
-              <li>Contributed to implementing features using (IoT) Internet of Things.</li>
-              <li>Configured real-time communication of embedded devices.</li>
-              <li>Integrated loT (Internet of Things) devices such as PSoC, ESP32, STM32 using Bluetooth Low Energy (BLE).</li>
-              <li>Developed a feature for remotely controlling devices in the Flutter app.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Projects Section (Carousel Style) -->
+<!-- Featured Projects Section (Carousel Style) -->
   <section id="projects" class="section-padding section-alt">
     <div class="container">
       <div class="section-header scroll-reveal">
@@ -632,8 +453,214 @@
     </div>
   </section>
 
+  <!-- Technical Skills Grid -->
+  <section id="skills" class="section-padding section-alt">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-subtitle">Proficiencies</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Languages & Frameworks -->
+        <div class="skills-card skill-hue-1 scroll-reveal">
+          <div class="skills-card-header">
+            <span class="skills-icon-badge"><i data-lucide="code-2" class="skills-icon"></i></span>
+            <h3>Languages &amp; Frameworks</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">Dart</span>
+            <span class="skill-badge">Flutter</span>
+            <span class="skill-badge">Kotlin (Native Android)</span>
+            <span class="skill-badge">Jetpack Compose</span>
+          </div>
+        </div>
+
+        <!-- State Management -->
+        <div class="skills-card skill-hue-2 scroll-reveal">
+          <div class="skills-card-header">
+            <span class="skills-icon-badge"><i data-lucide="git-branch" class="skills-icon"></i></span>
+            <h3>State Management</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">Riverpod</span>
+            <span class="skill-badge">Provider</span>
+            <span class="skill-badge">BLoC</span>
+            <span class="skill-badge">GetX</span>
+            <span class="skill-badge">Redux</span>
+          </div>
+        </div>
+
+        <!-- Architecture & Integrations -->
+        <div class="skills-card skill-hue-3 scroll-reveal">
+          <div class="skills-card-header">
+            <span class="skills-icon-badge"><i data-lucide="layers" class="skills-icon"></i></span>
+            <h3>Architecture &amp; API</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">Clean Architecture</span>
+            <span class="skill-badge">MVVM</span>
+            <span class="skill-badge">REST APIs</span>
+            <span class="skill-badge">Sockets</span>
+            <span class="skill-badge">Firebase Push Notifications</span>
+            <span class="skill-badge">Method Channels</span>
+          </div>
+        </div>
+
+        <!-- IoT & Hardware Connectivity -->
+        <div class="skills-card skill-hue-4 scroll-reveal">
+          <div class="skills-card-header">
+            <span class="skills-icon-badge"><i data-lucide="cpu" class="skills-icon"></i></span>
+            <h3>IoTs &amp; Bluetooth</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">IoT</span>
+            <span class="skill-badge">Bluetooth Low Energy (BLE)</span>
+            <span class="skill-badge">Bluetooth Classic</span>
+          </div>
+        </div>
+
+        <!-- Concurrency & Local Storage -->
+        <div class="skills-card skill-hue-5 scroll-reveal">
+          <div class="skills-card-header">
+            <span class="skills-icon-badge"><i data-lucide="database" class="skills-icon"></i></span>
+            <h3>Concurrency &amp; Storage</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">Asynchronous Programming</span>
+            <span class="skill-badge">Isolates</span>
+            <span class="skill-badge">WorkManager</span>
+            <span class="skill-badge">Flutter Migration</span>
+            <span class="skill-badge">Hive</span>
+            <span class="skill-badge">SQLite</span>
+          </div>
+        </div>
+
+        <!-- Tools & Additional Skills -->
+        <div class="skills-card skill-hue-6 scroll-reveal">
+          <div class="skills-card-header">
+            <span class="skills-icon-badge"><i data-lucide="settings" class="skills-icon"></i></span>
+            <h3>Tools &amp; Workflow</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">GitLab</span>
+            <span class="skill-badge">SVN</span>
+            <span class="skill-badge">Agile/Scrum</span>
+            <span class="skill-badge">Jira</span>
+            <span class="skill-badge">CI/CD Pipeline</span>
+            <span class="skill-badge">GitHub Actions</span>
+            <span class="skill-badge">Testing</span>
+            <span class="skill-badge">AWS EC2 / S3</span>
+          </div>
+        </div>
+
+        <!-- AI & Agentic Tooling -->
+        <div class="skills-card skill-hue-7 scroll-reveal">
+          <div class="skills-card-header">
+            <span class="skills-icon-badge"><i data-lucide="sparkles" class="skills-icon"></i></span>
+            <h3>AI &amp; Agentic Tooling</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-badge">Agentic Coding</span>
+            <span class="skill-badge">TensorFlow Lite</span>
+            <span class="skill-badge">On-device ML</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Experience Section -->
+  <section id="experience" class="section-padding">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="section-subtitle">My Career Path</span>
+        <h2 class="section-title">Work Experience</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience 1: RAG Technologies -->
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date">May 2026 - Present</span>
+              <h3 class="timeline-role">Freelance Software Developer</h3>
+              <h4 class="timeline-company">RAG Technologies, Kochi, Kerala</h4>
+            </div>
+            <ul class="timeline-body">
+              <li>Designed scalable Flutter modules using Clean Architecture and MVVM, improving maintainability across multiple enterprise applications.</li>
+              <li>Expanded technical expertise by learning Native Android development with Kotlin.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2: Bayasys -->
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date">March 2023 - May 2026</span>
+              <h3 class="timeline-role">Software Developer</h3>
+              <h4 class="timeline-company">Bayasys InfoTech Pvt Ltd, Kochi, Kerala</h4>
+            </div>
+            <ul class="timeline-body">
+              <li>Coordinated release on both Apple store deployment and Google Play Store deployment of more than 6 applications.</li>
+              <li>Developed and maintained 6+ production Flutter applications, serving 1,000+ active users.</li>
+              <li>Led the end-to-end implementation of GitLab, successfully migrating from Subversion (SVN) to enhance version control workflows.</li>
+              <li>Worked in an Agile (Scrum) environment with 3-week sprints, delivering features consistently.</li>
+              <li>Transforming the features of web-based ERP products into our mobile applications, aligning closely with their workflow.</li>
+              <li>Optimized existing Firebase notification for better performance.</li>
+              <li>Integrated Flutter application with weighing machine using BLE and Bluetooth Classic.</li>
+              <li>Applied Clean Architecture and MVVM to craft robust and scalable applications.</li>
+              <li>Worked with CI/CD pipelines and GitHub Actions.</li>
+              <li>Developed and maintained unit tests to ensure code quality and reliability.</li>
+              <li>Worked with sockets for real-time communication features.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 3: Skyewall -->
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date">February 2022 - February 2023</span>
+              <h3 class="timeline-role">Software Developer</h3>
+              <h4 class="timeline-company">Skyewall, Kochi, Kerala</h4>
+            </div>
+            <ul class="timeline-body">
+              <li>Maintenance and development of houseboat booking applications.</li>
+              <li>Responsive UI and enforced a booking feature for reserving houseboats, kayaking boats, and rentals. Created a seamless user experience for both vendors and customers.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 4: Highminds Systems India Corporation -->
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date">February 2022 - October 2022</span>
+              <h3 class="timeline-role">Freelance Software Developer</h3>
+              <h4 class="timeline-company">Highminds Systems India Corporation, Bengaluru, Karnataka</h4>
+            </div>
+            <ul class="timeline-body">
+              <li>Contributed to implementing features using (IoT) Internet of Things.</li>
+              <li>Configured real-time communication of embedded devices.</li>
+              <li>Integrated loT (Internet of Things) devices such as PSoC, ESP32, STM32 using Bluetooth Low Energy (BLE).</li>
+              <li>Developed a feature for remotely controlling devices in the Flutter app.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Achievements & Education -->
-  <section id="achievements" class="section-padding">
+  <section id="achievements" class="section-padding section-alt">
     <div class="container">
       <div class="achievements-education-wrapper">
         
