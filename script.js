@@ -377,8 +377,72 @@ function initContactForm() {
   const contactForm = document.getElementById('contact-form');
   if (!contactForm) return;
 
+  const validators = {
+    name: (value) => {
+      if (!value.trim()) return 'Please enter your name.';
+      if (value.trim().length < 2) return 'Name looks too short.';
+      return '';
+    },
+    email: (value) => {
+      if (!value.trim()) return 'Please enter your email.';
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(value.trim())) return 'Please enter a valid email address.';
+      return '';
+    },
+    subject: (value) => {
+      if (!value.trim()) return 'Please add a subject.';
+      if (value.trim().length < 3) return 'Subject looks too short.';
+      return '';
+    },
+    message: (value) => {
+      if (!value.trim()) return 'Please enter a message.';
+      if (value.trim().length < 10) return 'Message should be at least 10 characters.';
+      return '';
+    }
+  };
+
+  function fieldFor(name) {
+    return contactForm.querySelector(`[name="${name}"]`);
+  }
+
+  function validateSingle(name) {
+    const field = fieldFor(name);
+    const errorEl = document.getElementById(`error-${name}`);
+    if (!field || !errorEl) return true;
+
+    const message = validators[name](field.value);
+    field.classList.toggle('input-invalid', !!message);
+    errorEl.textContent = message;
+    return !message;
+  }
+
+  function validateAll() {
+    let isValid = true;
+    Object.keys(validators).forEach(name => {
+      if (!validateSingle(name)) isValid = false;
+    });
+    return isValid;
+  }
+
+  // Validate a field once it's left, and re-validate live as the user
+  // corrects an already-flagged field so the error clears as soon as it's fixed.
+  Object.keys(validators).forEach(name => {
+    const field = fieldFor(name);
+    if (!field) return;
+    field.addEventListener('blur', () => validateSingle(name));
+    field.addEventListener('input', () => {
+      if (field.classList.contains('input-invalid')) validateSingle(name);
+    });
+  });
+
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    if (!validateAll()) {
+      const firstInvalid = contactForm.querySelector('.input-invalid');
+      if (firstInvalid) firstInvalid.focus();
+      return;
+    }
 
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.innerHTML;

@@ -760,21 +760,30 @@
 
         <!-- Contact Form Card -->
         <div class="contact-form-card scroll-reveal">
-          <form id="contact-form">
+          <form id="contact-form" novalidate>
             <input type="hidden" name="access_key" value="79fb868f-9f7f-4dac-94da-89f97270e739">
             <div class="form-group">
               <label for="form-name">Name</label>
               <input type="text" name="name" id="form-name" placeholder="John Doe" required>
+              <span class="form-error" id="error-name"></span>
             </div>
-            
+
             <div class="form-group">
               <label for="form-email">Email</label>
               <input type="email" name="email" id="form-email" placeholder="john@example.com" required>
+              <span class="form-error" id="error-email"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" name="subject" id="form-subject" placeholder="Let's talk about..." required>
+              <span class="form-error" id="error-subject"></span>
             </div>
 
             <div class="form-group">
               <label for="form-message">Message</label>
               <textarea id="form-message" name="message" rows="5" placeholder="Let's build something awesome..." required></textarea>
+              <span class="form-error" id="error-message"></span>
             </div>
 
             <button type="submit" class="btn btn-primary btn-block">

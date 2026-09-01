@@ -31,6 +31,7 @@
   --shadow-color: rgba(15, 23, 42, 0.08);
   --glow-opacity: 0.05;
   --btn-primary-text: #ffffff;
+  --error-color: #dc2626;
 
   /* Bold "hard shadow" card system */
   --border-bold: 2px solid var(--ink);
@@ -1265,6 +1266,27 @@ header {
   border-color: var(--accent-color);
   box-shadow: 0 0 0 2px var(--accent-glow);
   background-color: var(--bg-color);
+}
+
+.form-group input.input-invalid,
+.form-group textarea.input-invalid {
+  border-color: var(--error-color);
+  background-color: rgba(220, 38, 38, 0.05);
+}
+
+.form-group input.input-invalid:focus,
+.form-group textarea.input-invalid:focus {
+  border-color: var(--error-color);
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.15);
+}
+
+.form-error {
+  display: block;
+  color: var(--error-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-top: 6px;
+  min-height: 14px;
 }
 
 .btn-block {
