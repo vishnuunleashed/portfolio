@@ -166,13 +166,8 @@ window.addEventListener('scroll', () => {
 // ==========================================================================
 const projectGalleries = {
   redawa_erp: [
-    'assets/images/eorder/1.webp',
-    'assets/images/eorder/2.webp',
-    'assets/images/eorder/3.webp',
-    'assets/images/eorder/4.webp',
-    'assets/images/eorder/5.webp',
-    'assets/images/eorder/6.webp',
     'assets/images/eorder/7.webp',
+    'assets/images/eorder/6.webp',
     'assets/images/eorder/8.webp',
     'assets/images/eorder/9.webp',
     'assets/images/eorder/10.webp',
@@ -185,7 +180,12 @@ const projectGalleries = {
     'assets/images/eorder/17.webp',
     'assets/images/eorder/18.webp',
     'assets/images/eorder/19.webp',
-    'assets/images/eorder/20.webp'
+    'assets/images/eorder/20.webp',
+    'assets/images/eorder/1.webp',
+    'assets/images/eorder/2.webp',
+    'assets/images/eorder/3.webp',
+    'assets/images/eorder/4.webp',
+    'assets/images/eorder/5.webp'
   ],
   waste_classifier: [
     'assets/images/pinned/waste_classifier/1.webp',
