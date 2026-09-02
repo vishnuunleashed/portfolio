@@ -166,8 +166,8 @@ window.addEventListener('scroll', () => {
 // ==========================================================================
 const projectGalleries = {
   redawa_erp: [
-    'assets/images/eorder/7.webp',
     'assets/images/eorder/6.webp',
+    'assets/images/eorder/7.webp',
     'assets/images/eorder/8.webp',
     'assets/images/eorder/9.webp',
     'assets/images/eorder/10.webp',
@@ -194,9 +194,9 @@ const projectGalleries = {
     'assets/images/pinned/waste_classifier/4.webp'
   ],
   taskflow: [
+    'assets/images/pinned/taskflow/3.webp',
     'assets/images/pinned/taskflow/1.webp',
     'assets/images/pinned/taskflow/2.webp',
-    'assets/images/pinned/taskflow/3.webp',
     'assets/images/pinned/taskflow/4.webp'
   ],
   github_explorer: [
