@@ -170,28 +170,22 @@ const projectGalleries = {
     'assets/images/eorder/2.webp',
     'assets/images/eorder/3.webp',
     'assets/images/eorder/4.webp',
-    'assets/images/eorder/5.webp'
-  ],
-  keechery_pms: [
-    'assets/images/cybernet_it/1.webp',
-    'assets/images/cybernet_it/2.webp',
-    'assets/images/cybernet_it/3.webp',
-    'assets/images/cybernet_it/4.webp',
-    'assets/images/cybernet_it/5.webp',
-    'assets/images/cybernet_it/6.webp'
-  ],
-  houseboat_booking: [
-    'assets/images/cybernet_agro/1.webp',
-    'assets/images/cybernet_agro/2.webp',
-    'assets/images/cybernet_agro/3.webp'
-  ],
-  smart_ro_iot: [
-    'assets/images/bmet_check/1.webp',
-    'assets/images/bmet_check/2.webp',
-    'assets/images/bmet_check/3.webp',
-    'assets/images/bmet_check/4.webp',
-    'assets/images/bmet_check/5.webp',
-    'assets/images/bmet_check/6.webp'
+    'assets/images/eorder/5.webp',
+    'assets/images/eorder/6.webp',
+    'assets/images/eorder/7.webp',
+    'assets/images/eorder/8.webp',
+    'assets/images/eorder/9.webp',
+    'assets/images/eorder/10.webp',
+    'assets/images/eorder/11.webp',
+    'assets/images/eorder/12.webp',
+    'assets/images/eorder/13.webp',
+    'assets/images/eorder/14.webp',
+    'assets/images/eorder/15.webp',
+    'assets/images/eorder/16.webp',
+    'assets/images/eorder/17.webp',
+    'assets/images/eorder/18.webp',
+    'assets/images/eorder/19.webp',
+    'assets/images/eorder/20.webp'
   ],
   waste_classifier: [
     'assets/images/pinned/waste_classifier/1.webp',
