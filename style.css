@@ -789,7 +789,7 @@ header {
 
 .project-image-placeholder {
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   color: var(--text-muted);
   background-color: var(--bg-alt-color);
 }
@@ -798,12 +798,19 @@ header {
   width: 32px;
   height: 32px;
   opacity: 0.5;
+  margin-bottom: 4px;
 }
 
 .project-placeholder-text {
   font-size: 0.8rem;
   font-weight: 500;
   opacity: 0.6;
+}
+
+.project-placeholder-subtext {
+  font-size: 0.7rem;
+  font-weight: 400;
+  opacity: 0.45;
 }
 
 /* ==========================================================================
